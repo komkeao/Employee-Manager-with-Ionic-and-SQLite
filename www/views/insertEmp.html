@@ -1,0 +1,35 @@
+<ion-view view-title="Add Employee">
+  <ion-content>
+    <div class="list">
+    	<label class="item item-input">
+    		<span class="input-label">First Name:</span>
+    		<input type="text" ng-model="fname" value="">
+    	</label>
+    	
+    </div>
+      <div class="list">
+    	<label class="item item-input">
+    		<span class="input-label">Last Name:</span>
+    		<input type="text" ng-model="lname">
+    	</label>
+    </div>
+      <div class="list">
+    	<label class="item item-input">
+    		<span class="input-label">Tel:</span>
+    		<input type="text" ng-model="tel">
+    	</label>
+    </div>
+      <div class="list">
+    	<label class="item item-input">
+    		<span class="input-label">Email:</span>
+    		<input type="text" ng-model="email">
+    	</label>
+    </div>
+    <div>
+    <button class="button button-block" ng-click="save(fname,lname,email,tel)">
+    	Save
+    </button>
+    </div>
+    <div>{{result}}</div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,19 @@
+<ion-view view-title="Employee Manager">
+<ion-nav-buttons side="right">
+ <a href="#/add" class="button">Add</a>
+</ion-nav-buttons>
+ <ion-content>
+    <div class="padding" collection-repeat="empItem in emp">
+    	<div class="item">
+    		<h2>{{empItem.fname}} {{empItem.lname}}
+    			<button class="button button-small" ng-click="del(empItem.id)">Delete</button>
+    		<button class="button button-small" ng-click="edit(empItem)">Edit</button></h2>
+    	
+    	</div>
+    	<div class="item item-body">
+    		<p>Tel:{{empItem.tel}}</p> 	<p>Email:{{empItem.email}}</p>
+    		<p ng-bind="empItem.date | date:'dd/MM/yyyy'"></p>
+    	</div>
+    </div>
+  </ion-content>
+</ion-view>
